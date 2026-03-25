@@ -1,0 +1,11 @@
+You are a QA automation expert.
+Given this API:
+Method: {method}
+URL: {url}
+Body: {body}
+
+Generate:
+1. A list of test scenarios (positive, negative, edge cases)
+2. Pytest functions using the requests library for each scenario
+
+Return ONLY valid Python code. No explanation.

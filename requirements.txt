@@ -1,0 +1,7 @@
+google-genai
+pytest
+requests
+fastapi
+uvicorn
+streamlit
+pillow
