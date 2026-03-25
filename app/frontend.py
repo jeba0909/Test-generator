@@ -11,6 +11,33 @@ from app.test_writer import save_test_code
 
 st.set_page_config(page_title="AI Test Generator", layout="wide")
 
+st.markdown(
+    """
+    <style>
+    /* Make the Primary button pop and glow */
+    button[kind="primary"] {
+        background: linear-gradient(135deg, #00d2ff 0%, #3a7bd5 100%) !important;
+        color: #ffffff !important;
+        border: none !important;
+        font-weight: 600 !important;
+        border-radius: 8px !important;
+        transition: all 0.3s ease !important;
+    }
+    button[kind="primary"]:hover {
+        transform: translateY(-3px) !important;
+        box-shadow: 0 8px 16px rgba(0, 210, 255, 0.35) !important;
+    }
+    
+    /* Input fields and text areas hover effects */
+    .stTextArea textarea:focus, .stTextInput input:focus {
+        border-color: #00d2ff !important;
+        box-shadow: 0 0 0 1px #00d2ff !important;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 st.title("AI Test Generator 🚀")
 st.write("Generate Pytest test cases from API definitions, UI screenshots, and custom prompts!")
 
